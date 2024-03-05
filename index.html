@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sign up Form</h1>
+ 
+    <form action="success.html">
+        <div class="container">
+    <p >
+        <label for="username">User name <input id="username" type="text" onkeyup="validateName()"></label>
+      <span id="usernameError"></span>
+    </p >
+    <p >
+        <label for="email">Mail <input id="email" type="email" onkeyup="validateMail()"></label>
+        <span id="emailError"></span>
+    </p >
+    <p >
+        <label for="password">Password <input id="password" type="password" onkeyup="validatePassword()"></label>
+        <span id="passwordError"></span>
+    </p >
+    <p >
+        <label for="cnfrmpass">Confirm Password <input id="cnfrmpass" type="password" onkeyup="validateCnfrmPass()"></label>
+        <span id="cnfrmpassError"></span>
+    </p >
+  </div>
+  <button id="submit" type="submit" onclick="return validateForm()">Submit</button>
+ </form>
+   <script src="script.js"></script>
+</body>
+</html>
